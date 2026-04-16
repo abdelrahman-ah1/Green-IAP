@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Request a Technical Quote | Green-IAP Agricultural Authority</title>
+<meta name="description" content="Submit a precision procurement request for Green-IAP's agricultural nutrient solutions. Tailored for large-scale operations across Egypt and the Nile Delta."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="premium-styles.css" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface-variant": "#42493e",
+                    "primary-fixed": "#bcf0ae",
+                    "on-tertiary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "primary-container": "#2d5a27",
+                    "inverse-surface": "#2e3130",
+                    "surface-container-highest": "#e1e3e1",
+                    "surface-container-high": "#e7e8e6",
+                    "secondary-fixed": "#ffddb0",
+                    "tertiary-container": "#7c3a55",
+                    "tertiary-fixed": "#ffd9e4",
+                    "on-tertiary-fixed": "#3b0520",
+                    "tertiary-fixed-dim": "#ffb0cc",
+                    "surface-tint": "#3b6934",
+                    "inverse-primary": "#a1d494",
+                    "on-surface": "#191c1b",
+                    "error": "#ba1a1a",
+                    "on-tertiary-container": "#ffaac8",
+                    "surface": "#f9faf8",
+                    "error-container": "#ffdad6",
+                    "primary-fixed-dim": "#a1d494",
+                    "on-secondary-fixed": "#281800",
+                    "background": "#f9faf8",
+                    "on-primary-fixed-variant": "#23501e",
+                    "outline": "#72796e",
+                    "on-error-container": "#93000a",
+                    "primary": "#154212",
+                    "on-background": "#191c1b",
+                    "on-primary": "#ffffff",
+                    "surface-dim": "#d9dad8",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#f3f4f2",
+                    "on-primary-container": "#9dd090",
+                    "inverse-on-surface": "#f0f1ef",
+                    "tertiary": "#60233e",
+                    "secondary-fixed-dim": "#e4c190",
+                    "secondary-container": "#ffdaa7",
+                    "secondary": "#755a31",
+                    "on-primary-fixed": "#002201",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-fixed-variant": "#5b421c",
+                    "on-secondary-container": "#795e35",
+                    "surface-variant": "#e1e3e1",
+                    "surface-bright": "#f9faf8",
+                    "outline-variant": "#c2c9bb",
+                    "on-tertiary-fixed-variant": "#71314c",
+                    "surface-container": "#edeeec"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Work Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+
+    .step-badge {
+        background: linear-gradient(135deg, #154212, #2d5a27);
+        color: #bcf0ae;
+        min-width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        font-size: 0.875rem;
+        letter-spacing: 0.05em;
+        flex-shrink: 0;
+        box-shadow: 0 4px 12px rgba(21,66,18,0.3);
+    }
+
+    .form-input {
+        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        outline: none;
+    }
+    .form-input:focus {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(21,66,18,0.12);
+        background-color: #ffffff !important;
+    }
+
+    .check-item:has(input:checked) {
+        background: #edeeec;
+        border-color: rgba(21,66,18,0.2) !important;
+    }
+    .check-item input[type="checkbox"]:checked + span { color: #154212; font-weight: 600; }
+
+    .sidebar-card {
+        background: linear-gradient(160deg, #ffffff 0%, #f3f4f2 100%);
+        border: 1px solid rgba(194,201,187,0.4);
+        border-radius: 1rem;
+    }
+
+    @keyframes heroShift {
+        0%   { background-position: 0% 50%;   }
+        50%  { background-position: 100% 50%; }
+        100% { background-position: 0% 50%;   }
+    }
+    .hero-gradient {
+        background: linear-gradient(130deg, rgba(21,66,18,0.93), rgba(45,90,39,0.78), rgba(21,66,18,0.95));
+        background-size: 200% 200%;
+        animation: heroShift 12s ease infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .animate-spin { animation: spin 1s linear infinite; display: inline-block; }
+</style>
+<link rel="icon" type="image/png" href="logo.png">
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container">
+<div id="site-header-container"></div>
+
+<main class="min-h-screen pt-20">
+
+<!-- HERO ============================================================ -->
+<section class="relative min-h-[480px] flex items-center overflow-hidden bg-primary">
+    <div class="absolute inset-0 z-0">
+        <img alt="Agricultural laboratory" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKdnSIpmskCERstDdclRjkJU_Uk4TRFiwfEY7o4v4R_ac2EYVUZcjk5ZWS0ArgB5LKtKJ60epMP4tTUjuqgnrlFAzFri-NbUYA1YU-f8EUUupuSnXp5Zx1u61K2mvd2siDH4RKNurwFBtfgEeA7N3zuH7W-ZMQFx6yG-zZANP3xhMJow8sATTOkGW-HzRwg8rqxoYCzZFjWQSfzyaSS_ayd-DBGuCtHPB_RLVlOdyyLuCumMdBlgQz_ZfrUEZUluLNcJCkfPfUwmQ"/>
+    </div>
+    <div class="hero-gradient absolute inset-0 z-10"></div>
+    <div class="relative z-20 max-w-7xl mx-auto px-6 lg:px-12 w-full py-20 md:py-28">
+        <div class="max-w-3xl">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/15 text-white/75 text-[11px] font-bold tracking-[0.15em] uppercase mb-8 backdrop-blur-sm">
+                <span class="material-symbols-outlined text-xs" aria-hidden="true">science</span>
+                Technical Procurement Protocol
+            </div>
+            <h1 class="text-white font-headline text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tight leading-[1.05] mb-6">
+                Request a<br/>
+                <span class="text-primary-fixed">Technical Quote</span>
+            </h1>
+            <p class="text-white/70 text-lg md:text-xl max-w-xl leading-relaxed mb-10">
+                Precision-engineered fertilizer solutions tailored to your crop type, soil profile, and operational scale.
+            </p>
+            <div class="flex flex-wrap gap-6">
+                <div class="flex items-center gap-2 text-white/80 text-sm font-semibold">
+                    <span class="material-symbols-outlined text-primary-fixed text-base" aria-hidden="true">schedule</span>
+                    24-hour review guarantee
+                </div>
+                <div class="flex items-center gap-2 text-white/80 text-sm font-semibold">
+                    <span class="material-symbols-outlined text-primary-fixed text-base" aria-hidden="true">verified</span>
+                    Senior agronomist reviewed
+                </div>
+                <div class="flex items-center gap-2 text-white/80 text-sm font-semibold">
+                    <span class="material-symbols-outlined text-primary-fixed text-base" aria-hidden="true">lock</span>
+                    Data secured &amp; private
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTENT ========================================================= -->
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-16 lg:py-24">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 xl:gap-20">
+
+        <!-- FORM AREA ─────────────────────────────────────────────── -->
+        <div class="lg:col-span-8">
+
+            <div id="quote-form-status" class="hidden mb-10 p-6 rounded-2xl font-semibold text-center text-base border"></div>
+
+            <form id="quote-form" action="https://formspree.io/f/mzdyeken" method="POST" class="space-y-12" novalidate>
+
+                <!-- Section 01 ─── -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="step-badge">01</div>
+                        <div>
+                            <h2 class="font-headline text-xl md:text-2xl font-bold uppercase tracking-tight text-primary">Contact Information</h2>
+                            <p class="text-on-surface-variant text-sm mt-0.5">Who should we address the quote to?</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+                        <div class="space-y-1.5">
+                            <label class="text-[11px] font-bold uppercase tracking-[0.12em] text-secondary" for="q-org">Organization Name <span class="text-error">*</span></label>
+                            <input id="q-org" name="organization" class="form-input w-full bg-surface-container-high border border-transparent rounded-xl p-3.5 focus:ring-2 focus:ring-primary/30 text-sm" placeholder="e.g. AgriCorp International" type="text" required/>
+                        </div>
+                        <div class="space-y-1.5">
+                            <label class="text-[11px] font-bold uppercase tracking-[0.12em] text-secondary" for="q-lead">Technical Lead <span class="text-error">*</span></label>
+                            <input id="q-lead" name="technical_lead" class="form-input w-full bg-surface-container-high border border-transparent rounded-xl p-3.5 focus:ring-2 focus:ring-primary/30 text-sm" placeholder="Full Name" type="text" required/>
+                        </div>
+                        <div class="space-y-1.5">
+                            <label class="text-[11px] font-bold uppercase tracking-[0.12em] text-secondary" for="q-email">Email Address <span class="text-error">*</span></label>
+                            <input id="q-email" name="email" class="form-input w-full bg-surface-container-high border border-transparent rounded-xl p-3.5 focus:ring-2 focus:ring-primary/30 text-sm" placeholder="technical@org.com" type="email" required/>
+                        </div>
+                        <div class="space-y-1.5">
+                            <label class="text-[11px] font-bold uppercase tracking-[0.12em] text-secondary" for="q-phone">Phone Number <span class="text-error">*</span></label>
+                            <input id="q-phone" name="phone" class="form-input w-full bg-surface-container-high border border-transparent rounded-xl p-3.5 focus:ring-2 focus:ring-primary/30 text-sm" placeholder="+20 xxx xxx xxxx" type="tel" required/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-outline-variant/30"></div>
+
+                <!-- Section 02 ─── -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="step-badge">02</div>
+                        <div>
+                            <h2 class="font-headline text-xl md:text-2xl font-bold uppercase tracking-tight text-primary">Agricultural Profile</h2>
+                            <p class="text-on-surface-variant text-sm mt-0.5">Tell us about your land and crop requirements.</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+                        <div class="space-y-1.5">
+                            <label class="text-[11px] font-bold uppercase tracking-[0.12em] text-secondary" for="q-crop">Crop Type <span class="text-error">*</span></label>
+                            <select id="q-crop" name="crop_type" class="form-input w-full bg-surface-container-high border border-transparent rounded-xl p-3.5 focus:ring-2 focus:ring-primary/30 text-sm appearance-none" required>
+                                <option value="" disabled selected>Select primary commodity</option>
+                                <option>Grains (Wheat / Corn / Rice)</option>
+                                <option>Vegetables</option>
+                                <option>Fruits &amp; Orchards</option>
+                                <option>Industrial Crops (Cotton / Sugarcane)</option>
+                                <option>Legumes / Specialty</option>
+                                <option>Forage / Pasture</option>
+                            </select>
+                        </div>
+                        <div class="space-y-1.5">
+                            <label class="text-[11px] font-bold uppercase tracking-[0.12em] text-secondary" for="q-yield">Expected Yield Target</label>
+                            <input id="q-yield" name="yield_target" class="form-input w-full bg-surface-container-high border border-transparent rounded-xl p-3.5 focus:ring-2 focus:ring-primary/30 text-sm" placeholder="e.g. 4.5 tons / acre" type="text"/>
+                        </div>
+                        <div class="space-y-1.5">
+                            <label class="text-[11px] font-bold uppercase tracking-[0.12em] text-secondary" for="q-area">Total Acreage <span class="text-error">*</span></label>
+                            <input id="q-area" name="acreage" class="form-input w-full bg-surface-container-high border border-transparent rounded-xl p-3.5 focus:ring-2 focus:ring-primary/30 text-sm" placeholder="Net area (hectares or acres)" type="number" min="1" required/>
+                        </div>
+                        <div class="space-y-1.5">
+                            <label class="text-[11px] font-bold uppercase tracking-[0.12em] text-secondary" for="q-region">Geographic Region <span class="text-error">*</span></label>
+                            <input id="q-region" name="region" class="form-input w-full bg-surface-container-high border border-transparent rounded-xl p-3.5 focus:ring-2 focus:ring-primary/30 text-sm" placeholder="Governorate or Country" type="text" required/>
+                        </div>
+                    </div>
+
+                    <!-- Crop details box — revealed after crop selection -->
+                    <div id="crop-detail-box" class="overflow-hidden transition-all duration-500 ease-in-out" style="max-height:0; opacity:0; margin-top:0;">
+                        <div class="space-y-1.5 pt-1">
+                            <label class="text-[11px] font-bold uppercase tracking-[0.12em] text-secondary flex items-center gap-1.5" for="q-crop-detail">
+                                <span class="material-symbols-outlined text-sm text-secondary" aria-hidden="true">edit_note</span>
+                                Crop Variety &amp; Growth Stage Details
+                            </label>
+                            <textarea id="q-crop-detail" name="crop_detail" rows="3"
+                                class="form-input w-full bg-surface-container-high border border-transparent rounded-xl p-3.5 focus:ring-2 focus:ring-primary/30 text-sm leading-relaxed"
+                                placeholder="e.g. Variety name, current growth stage, last fertilization date, irrigation method (drip / sprinkler / flood)..."
+                            ></textarea>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="border-t border-outline-variant/30"></div>
+
+                <!-- Section 03 ─── -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="step-badge">03</div>
+                        <div>
+                            <h2 class="font-headline text-xl md:text-2xl font-bold uppercase tracking-tight text-primary">Product Interest</h2>
+                            <p class="text-on-surface-variant text-sm mt-0.5">Select the solution categories relevant to your operation.</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-2">
+                            <h3 class="text-xs font-black uppercase tracking-[0.18em] text-secondary border-b border-outline-variant/30 pb-2 mb-3">Tarazona Series</h3>
+                            <label class="check-item flex items-center gap-3 p-3 rounded-xl border border-transparent cursor-pointer hover:bg-surface-container transition-all">
+                                <input class="rounded text-primary focus:ring-primary" type="checkbox" name="interest[]" value="Fert Irrigations"/>
+                                <span class="text-sm font-medium text-on-surface">Fert Irrigations</span>
+                            </label>
+                            <label class="check-item flex items-center gap-3 p-3 rounded-xl border border-transparent cursor-pointer hover:bg-surface-container transition-all">
+                                <input class="rounded text-primary focus:ring-primary" type="checkbox" name="interest[]" value="Bio-stimulants"/>
+                                <span class="text-sm font-medium text-on-surface">Bio-stimulants</span>
+                            </label>
+                            <label class="check-item flex items-center gap-3 p-3 rounded-xl border border-transparent cursor-pointer hover:bg-surface-container transition-all">
+                                <input class="rounded text-primary focus:ring-primary" type="checkbox" name="interest[]" value="Foliar Nutrition"/>
+                                <span class="text-sm font-medium text-on-surface">Foliar Nutrition</span>
+                            </label>
+                            <label class="check-item flex items-center gap-3 p-3 rounded-xl border border-transparent cursor-pointer hover:bg-surface-container transition-all">
+                                <input class="rounded text-primary focus:ring-primary" type="checkbox" name="interest[]" value="Micronutrient Correctors"/>
+                                <span class="text-sm font-medium text-on-surface">Micronutrient Correctors</span>
+                            </label>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="text-xs font-black uppercase tracking-[0.18em] text-secondary border-b border-outline-variant/30 pb-2 mb-3">Fertalin Portfolio</h3>
+                            <label class="check-item flex items-center gap-3 p-3 rounded-xl border border-transparent cursor-pointer hover:bg-surface-container transition-all">
+                                <input class="rounded text-primary focus:ring-primary" type="checkbox" name="interest[]" value="Setting &amp; Blooming"/>
+                                <span class="text-sm font-medium text-on-surface">Setting &amp; Blooming</span>
+                            </label>
+                            <label class="check-item flex items-center gap-3 p-3 rounded-xl border border-transparent cursor-pointer hover:bg-surface-container transition-all">
+                                <input class="rounded text-primary focus:ring-primary" type="checkbox" name="interest[]" value="Amino Acids Complex"/>
+                                <span class="text-sm font-medium text-on-surface">Amino Acids Complex</span>
+                            </label>
+                            <label class="check-item flex items-center gap-3 p-3 rounded-xl border border-transparent cursor-pointer hover:bg-surface-container transition-all">
+                                <input class="rounded text-primary focus:ring-primary" type="checkbox" name="interest[]" value="Root Development"/>
+                                <span class="text-sm font-medium text-on-surface">Root Development</span>
+                            </label>
+                            <label class="check-item flex items-center gap-3 p-3 rounded-xl border border-transparent cursor-pointer hover:bg-surface-container transition-all">
+                                <input class="rounded text-primary focus:ring-primary" type="checkbox" name="interest[]" value="Anti-Stress Formulations"/>
+                                <span class="text-sm font-medium text-on-surface">Anti-Stress Formulations</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-outline-variant/30"></div>
+
+                <!-- Section 04 ─── -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="step-badge">04</div>
+                        <div>
+                            <h2 class="font-headline text-xl md:text-2xl font-bold uppercase tracking-tight text-primary">Technical Requirements</h2>
+                            <p class="text-on-surface-variant text-sm mt-0.5">Describe any specific soil challenges or nutrient goals.</p>
+                        </div>
+                    </div>
+                    <div class="space-y-1.5">
+                        <label class="text-[11px] font-bold uppercase tracking-[0.12em] text-secondary" for="q-reqs">Soil Challenges &amp; Deficiencies <span class="text-error">*</span></label>
+                        <textarea id="q-reqs" name="requirements" class="form-input w-full bg-surface-container-high border border-transparent rounded-xl p-4 focus:ring-2 focus:ring-primary/30 text-sm leading-relaxed" placeholder="Describe salinity levels, pH imbalances, deficiency symptoms, irrigation system type, or target application windows..." rows="6" required></textarea>
+                    </div>
+                </div>
+
+                <!-- Submit ─── -->
+                <div class="pt-4 flex flex-col sm:flex-row items-start sm:items-center gap-6">
+                    <button id="quote-submit-btn" class="group relative overflow-hidden bg-gradient-to-br from-primary to-primary-container text-white px-10 py-4 rounded-xl font-headline font-black uppercase tracking-widest shadow-xl hover:shadow-2xl hover:-translate-y-1 active:scale-95 transition-all duration-300 text-sm flex items-center gap-3 w-full sm:w-auto justify-center" type="submit">
+                        <span class="material-symbols-outlined text-primary-fixed text-base group-hover:rotate-12 transition-transform" aria-hidden="true">send</span>
+                        Generate Technical Quote
+                    </button>
+                    <p class="text-xs text-on-surface-variant leading-relaxed max-w-xs">
+                        By submitting, you agree to our data sovereignty and privacy protocols. Fields marked <span class="text-error font-bold">*</span> are required.
+                    </p>
+                </div>
+
+            </form>
+        </div>
+
+        <!-- SIDEBAR ─────────────────────────────────────────────── -->
+        <aside class="lg:col-span-4 space-y-6">
+
+            <!-- Guarantee + contact card -->
+            <div class="sidebar-card p-6 space-y-5">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                        <span class="material-symbols-outlined text-primary text-2xl" aria-hidden="true">verified_user</span>
+                    </div>
+                    <div>
+                        <h4 class="font-headline font-bold uppercase tracking-tight text-primary text-base mb-1">Technical Support Guarantee</h4>
+                        <p class="text-xs text-on-surface-variant leading-relaxed">All quotes are reviewed by a senior agronomist within 24 hours to ensure nutrient compatibility and ROI optimization.</p>
+                    </div>
+                </div>
+                <div class="h-px bg-outline-variant/30"></div>
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center flex-shrink-0">
+                        <span class="material-symbols-outlined text-on-secondary-container text-2xl" aria-hidden="true">eco</span>
+                    </div>
+                    <div>
+                        <h4 class="font-headline font-bold uppercase tracking-tight text-primary text-base mb-1">Sustainable Formulations</h4>
+                        <p class="text-xs text-on-surface-variant leading-relaxed">88% of our portfolio has organic-compatible options aligned with global soil preservation standards.</p>
+                    </div>
+                </div>
+                <div class="h-px bg-outline-variant/30"></div>
+                <h4 class="font-headline font-bold uppercase tracking-tight text-primary text-base">Direct Consultation</h4>
+                <div class="space-y-3">
+                    <a href="tel:+18006733442" class="flex items-center gap-3 text-on-surface hover:text-primary transition-colors group">
+                        <div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center group-hover:bg-primary/10 transition-colors">
+                            <span class="material-symbols-outlined text-secondary text-lg" aria-hidden="true">call</span>
+                        </div>
+                        <span class="text-sm font-medium">+1 (800) GREEN-IAP</span>
+                    </a>
+                    <a href="mailto:procurement@green-iap.com" class="flex items-center gap-3 text-on-surface hover:text-primary transition-colors group">
+                        <div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center group-hover:bg-primary/10 transition-colors">
+                            <span class="material-symbols-outlined text-secondary text-lg" aria-hidden="true">mail</span>
+                        </div>
+                        <span class="text-sm font-medium">procurement@green-iap.com</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- SDS access card -->
+            <div class="sidebar-card p-6">
+                <h4 class="font-headline font-bold uppercase tracking-tight text-primary text-base mb-2">SDS Documentation</h4>
+                <p class="text-xs text-on-surface-variant leading-relaxed mb-4">Safety Data Sheets for all Fertalin and Tarazona products are available 24/7 in our Product Matrix.</p>
+                <a class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-secondary hover:text-primary transition-colors group" href="catalog.html">
+                    View Product Matrix
+                    <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" aria-hidden="true">arrow_forward</span>
+                </a>
+            </div>
+
+            <!-- Decorative image -->
+            <div class="relative h-56 rounded-2xl overflow-hidden shadow-xl group">
+                <img alt="Soil analysis close up" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhY8BEj3rfd4_-c4EtPEyII-uJq1El4eUkjswp8f4fjLo57_ZdeayRlMaonfJ0K0heguMqfLsUat6_pObn889aT7pSXqZi-1t3LqshV8ZIZqMcGBGl4TaJLcgL-kU3kyvmPRKPgcjJeOeFKVFVHMtfTZodvfow8P_OQtYuaYdk-3NXCR-wRhY2GHLMH51rPBHnspabDxNqrX_fYRezh-qM8zZInsD5XykBzPnfVEeSx3kv3J7wNv8nRBe1aQ-1mV1zX31dvyMOz9U"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent flex items-end p-5">
+                    <div>
+                        <p class="text-primary-fixed text-[10px] font-bold uppercase tracking-[0.15em] mb-1">Certified</p>
+                        <p class="text-white text-sm font-bold">Global Soil Standards Compliant</p>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+    </div>
+</div>
+</main>
+
+<div id="site-footer-container"></div>
+<script src="load-components.js"></script>
+<script>
+  const quoteForm   = document.getElementById('quote-form');
+  const quoteStatus = document.getElementById('quote-form-status');
+  const submitBtn   = document.getElementById('quote-submit-btn');
+
+  quoteForm.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    if (!quoteForm.checkValidity()) { quoteForm.reportValidity(); return; }
+
+    const originalHTML = submitBtn.innerHTML;
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-base" aria-hidden="true">progress_activity</span>&nbsp;Processing...';
+
+    try {
+      const res = await fetch(quoteForm.action, {
+        method: 'POST',
+        body: new FormData(quoteForm),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (res.ok) {
+        quoteStatus.innerHTML = `
+          <div class="flex items-center justify-center gap-4">
+            <span class="material-symbols-outlined text-3xl text-primary flex-shrink-0" style="font-variation-settings:'FILL' 1" aria-hidden="true">check_circle</span>
+            <div class="text-left">
+              <p class="font-bold text-base text-primary">Technical Quote Initiated!</p>
+              <p class="text-sm font-normal text-on-surface-variant mt-1">Our senior agronomist will review your agricultural data and respond with a formal quote within 24 hours.</p>
+            </div>
+          </div>`;
+        quoteStatus.className = 'mb-10 p-6 rounded-2xl border border-primary/20 bg-primary/5';
+        quoteForm.reset();
+        quoteStatus.classList.remove('hidden');
+        window.scrollTo({ top: quoteStatus.offsetTop - 120, behavior: 'smooth' });
+      } else {
+        const data = await res.json().catch(() => ({}));
+        const msg  = data.errors ? data.errors.map(er => er.message).join(', ') : 'Submission error. Please try again.';
+        quoteStatus.innerHTML = `<span class="material-symbols-outlined mr-2 align-middle text-error" aria-hidden="true">error</span>${msg}`;
+        quoteStatus.className = 'mb-10 p-5 rounded-2xl border border-error/20 bg-error/5 text-error';
+        quoteStatus.classList.remove('hidden');
+      }
+    } catch {
+      quoteStatus.innerHTML = '<span class="material-symbols-outlined mr-2 align-middle text-error" aria-hidden="true">wifi_off</span>Network error. Please check your connection and try again.';
+      quoteStatus.className = 'mb-10 p-5 rounded-2xl border border-error/20 bg-error/5 text-error';
+      quoteStatus.classList.remove('hidden');
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalHTML;
+    }
+  });
+
+  // ── Crop type → reveal details box ──────────────────────────────
+  const cropSelect     = document.getElementById('q-crop');
+  const cropDetailBox  = document.getElementById('crop-detail-box');
+
+  cropSelect.addEventListener('change', function() {
+    if (this.value && this.value !== '') {
+      cropDetailBox.style.maxHeight = cropDetailBox.scrollHeight + 'px';
+      cropDetailBox.style.opacity   = '1';
+      cropDetailBox.style.marginTop = '1rem';
+    } else {
+      cropDetailBox.style.maxHeight = '0';
+      cropDetailBox.style.opacity   = '0';
+      cropDetailBox.style.marginTop = '0';
+    }
+  });
+
+  // Header shrink on scroll
+  window.addEventListener('scroll', function() {
+    const headerNav   = document.getElementById('site-header-nav');
+    const headerInner = document.getElementById('header-inner');
+    const headerLogo  = document.getElementById('header-logo');
+    if (window.scrollY > 50) {
+      if (headerInner) headerInner.style.padding = '0.5rem 2rem';
+      if (headerLogo)  headerLogo.style.height = '2rem';
+      if (headerNav)   headerNav.classList.add('shadow-md');
+    } else {
+      if (headerInner) headerInner.style.padding = '1rem 2rem';
+      if (headerLogo)  headerLogo.style.height = '3.75rem';
+      if (headerNav)   headerNav.classList.remove('shadow-md');
+    }
+  }, { passive: true });
+</script>
+</body></html>
